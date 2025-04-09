@@ -1,3 +1,1 @@
-Joint processing of rolling shutter effect and motion blur,
-monochromatic channel input, 
-single frame processing
+Refer to JCD's method for single frame RGB artifact removal
