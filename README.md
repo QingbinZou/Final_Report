@@ -1,1 +1,3 @@
-本科期间对侧重于滚动快门效应的伪影去除
+Joint processing of rolling shutter effect and motion blur,
+monochromatic channel input, 
+single frame processing
