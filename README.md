@@ -1,2 +1,1 @@
-# Final_Report
-Rolling shutter handling, two of them incomplete versions
+本科期间对侧重于滚动快门效应的伪影去除
