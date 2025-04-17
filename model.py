@@ -11,7 +11,7 @@ def res_block(x, filters, kernel_size=3):
     return x
 
 # 构建 ResUNet with Conv2DTranspose 上采样
-def build_resunet(input_shape=(384, 384, 1)):
+def build_resunet(input_shape=(384, 384, 3)):
     inputs = Input(shape=input_shape)
 
     # Encoder
@@ -47,5 +47,5 @@ def build_resunet(input_shape=(384, 384, 1)):
     c7 = Conv2D(32, 3, activation='relu', padding='same')(m7)
     c7 = res_block(c7, 32)
 
-    outputs = Conv2D(1, 1, activation='sigmoid', padding='same')(c7)
+    outputs = Conv2D(3, (1,1), activation='sigmoid', padding='same')(c7)
     return Model(inputs, outputs)
