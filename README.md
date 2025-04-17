@@ -14,9 +14,12 @@ Gradient Loss	使用 sobel_edges 获取梯度，约束图像边缘清晰度	防�
 -------
 ![image](https://github.com/user-attachments/assets/8561c238-1357-4e2b-be9a-8061c418d488)
 
-https://github.com/user-attachments/assets/ce63fa56-7649-4a3a-aa60-5d2653e3ac4e
 
-https://github.com/user-attachments/assets/ff7c8798-acdd-4925-b12d-446ac3ebb765
+https://github.com/user-attachments/assets/0285fc14-f64a-48b1-ae33-90bdc8bc37dd
+
+
+https://github.com/user-attachments/assets/5206bcc4-e4d5-43bd-835e-e0590974ee80
+
 
 忽略的一个错误（训练和测试使用同一组数据）
 -------
