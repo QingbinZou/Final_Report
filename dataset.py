@@ -33,13 +33,14 @@ class RSDataset(Sequence):
             np.random.shuffle(self.files)
 
     def load_image(self, path, is_rs):
-        img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
+        img = cv2.imread(path, cv2.IMREAD_COLOR)
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # ✅ 转换为 RGB
         img = cv2.resize(img, self.size).astype(np.float32) / 255.0
 
-        # 对 RS 图像进行模糊增强（仅训练时启用）
         if is_rs and self.augment:
-            img = cv2.GaussianBlur(img, (5, 3), 1.5)
-            img = random_noise(img, mode='gaussian', var=0.001)
+            for c in range(3):
+                img[..., c] = cv2.GaussianBlur(img[..., c], (5, 3), 1.5)
+                img[..., c] = random_noise(img[..., c], mode='gaussian', var=0.001)
             img = np.clip(img, 0, 1).astype(np.float32)
 
-        return np.expand_dims(img, axis=-1)
+        return img
