@@ -21,6 +21,6 @@ https://github.com/user-attachments/assets/0285fc14-f64a-48b1-ae33-90bdc8bc37dd
 https://github.com/user-attachments/assets/5206bcc4-e4d5-43bd-835e-e0590974ee80
 
 
-忽略的一个错误（训练和测试使用同一组数据）
+忽略的一个错误（训练和测试使用同一组数据）视频较短，为方便查看，降低帧数到10帧
 -------
 
