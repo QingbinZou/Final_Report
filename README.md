@@ -12,4 +12,6 @@ L1 Loss	tf.reduce_mean(tf.abs(y_true - y_pred))	精确还原图像像素值，�
 SSIM Loss	1 - tf.reduce_mean(tf.image.ssim(...))	强调图像的结构相似性，提高感知质量；  
 Gradient Loss	使用 sobel_edges 获取梯度，约束图像边缘清晰度	防止模糊，保持清晰轮廓和结构；  
 -------
-
+![image](https://github.com/user-attachments/assets/8561c238-1357-4e2b-be9a-8061c418d488)
+使用错误方法（训练和测试用的同一组数据）
+-------
