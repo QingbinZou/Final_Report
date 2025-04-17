@@ -13,5 +13,11 @@ SSIM Loss	1 - tf.reduce_mean(tf.image.ssim(...))	强调图像的结构相似性�
 Gradient Loss	使用 sobel_edges 获取梯度，约束图像边缘清晰度	防止模糊，保持清晰轮廓和结构；  
 -------
 ![image](https://github.com/user-attachments/assets/8561c238-1357-4e2b-be9a-8061c418d488)
-使用错误方法（训练和测试用的同一组数据）
+
+https://github.com/user-attachments/assets/ce63fa56-7649-4a3a-aa60-5d2653e3ac4e
+
+https://github.com/user-attachments/assets/ff7c8798-acdd-4925-b12d-446ac3ebb765
+
+忽略的一个错误（训练和测试使用同一组数据）
 -------
+
