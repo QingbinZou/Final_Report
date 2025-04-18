@@ -15,14 +15,19 @@ Gradient Loss	使用 sobel_edges 获取梯度，约束图像边缘清晰度	防�
 ![image](https://github.com/user-attachments/assets/8561c238-1357-4e2b-be9a-8061c418d488)
 
 
-https://github.com/user-attachments/assets/0285fc14-f64a-48b1-ae33-90bdc8bc37dd
+忽略的一个错误：训练和测试使用同一组数据；
+视频较短，为方便查看，降低帧数到10帧
 
 
-https://github.com/user-attachments/assets/5206bcc4-e4d5-43bd-835e-e0590974ee80
-
-
-忽略的一个错误（训练和测试使用同一组数据）视频较短，为方便查看，降低帧数到10帧
+数据集来源：
 -------
-仿真数据集来源： https://www.cvl.isy.liu.se/research/datasets/rs-dataset/
-现实数据集来源： https://drive.google.com/file/d/1h7UP1kci8zbg3TQp37J-imrvzlh2X6zn/view
---------
+[CVPR 2010] Rectifying rolling shutter video from hand-held devices：
+https://www.cvl.isy.liu.se/research/datasets/rs-dataset/ ；
+[CVPR 2022] Learning Adaptive Warping for Real-World Rolling Shutter Correction：
+https://drive.google.com/file/d/1h7UP1kci8zbg3TQp37J-imrvzlh2X6zn/view ；
+https://github.com/ethliup/DeepUnrollNet.git：
+https://drive.google.com/open?id=1gJoI7PSv7KEm2qb9-bt6hiyZ3PPlwEpd: the training data (~2G) from the Fastec rolling shutter dataset.
+https://drive.google.com/open?id=1Yfu6sOgIa6vJ6VwAedycjLu-_7rx7vZ2：the test data (~930 MB) from the Fastec rolling shutter dataset.
+https://drive.google.com/open?id=15vXSX3g_STd6RPDWLg2sIn11mKH0sXxg: the training data (~10G) from the Carla rolling shutter dataset.
+https://drive.google.com/open?id=1rvN0q5KF9BTxBOx4oOyxJKzX8XkUB-zM: the test data (~2G) from the Carla rolling shutter dataset.
+
