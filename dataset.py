@@ -5,7 +5,7 @@ from tensorflow.keras.utils import Sequence
 from skimage.util import random_noise
 
 class RSDataset(Sequence):
-    def __init__(self, rs_dir, gs_dir, size=(384, 384), batch_size=4, shuffle=True, augment=True):
+    def __init__(self, rs_dir, gs_dir, size=(384, 512), batch_size=4, shuffle=True, augment=True):
         self.rs_dir = rs_dir
         self.gs_dir = gs_dir
         self.size = size
@@ -34,8 +34,10 @@ class RSDataset(Sequence):
 
     def load_image(self, path, is_rs):
         img = cv2.imread(path, cv2.IMREAD_COLOR)
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # ✅ 转换为 RGB
-        img = cv2.resize(img, self.size).astype(np.float32) / 255.0
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+        height, width = self.size
+        img = cv2.resize(img, (width, height)).astype(np.float32) / 255.0  # ✅ 修复方向
 
         if is_rs and self.augment:
             for c in range(3):
@@ -44,3 +46,4 @@ class RSDataset(Sequence):
             img = np.clip(img, 0, 1).astype(np.float32)
 
         return img
+
