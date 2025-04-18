@@ -25,9 +25,5 @@ Gradient Loss	使用 sobel_edges 获取梯度，约束图像边缘清晰度	防�
 https://www.cvl.isy.liu.se/research/datasets/rs-dataset/ ；           
 [CVPR 2022] Learning Adaptive Warping for Real-World Rolling Shutter Correction：        
 https://drive.google.com/file/d/1h7UP1kci8zbg3TQp37J-imrvzlh2X6zn/view ；        
-https://github.com/ethliup/DeepUnrollNet.git：      
-https://drive.google.com/open?id=1gJoI7PSv7KEm2qb9-bt6hiyZ3PPlwEpd: the training data (~2G) from the Fastec rolling shutter dataset.        
-https://drive.google.com/open?id=1Yfu6sOgIa6vJ6VwAedycjLu-_7rx7vZ2：the test data (~930 MB) from the Fastec rolling shutter dataset.         
-https://drive.google.com/open?id=15vXSX3g_STd6RPDWLg2sIn11mKH0sXxg: the training data (~10G) from the Carla rolling shutter dataset.         
-https://drive.google.com/open?id=1rvN0q5KF9BTxBOx4oOyxJKzX8XkUB-zM: the test data (~2G) from the Carla rolling shutter dataset.       
+      
 
