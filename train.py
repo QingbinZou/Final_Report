@@ -28,7 +28,7 @@ save_pred_dir = 'mid_pred'
 os.makedirs(save_pred_dir, exist_ok=True)
 log_file = open("training_log.txt", "a")
 
-SCKEY = "SCT276699TyovPkiEM6HAQRirM3oMZJkJa"
+SCKEY = "填写你的SCKEY"
 send_url = f"https://sctapi.ftqq.com/{SCKEY}.send"
 
 # ---------- 数据集加载 ---------- #
